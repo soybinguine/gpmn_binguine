@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="client/css/styles.css" />
+
+    <title>Mừng GPMN 30/4/1975</title>
+    <script>
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+        function mischandler() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+
+
+    </script>
+</head>
+
+<body scroll="no">
+    <div id="main" style="background-image: url('host/resources/BG.gif');">        
+        <h1>Chào mừng ngày Giải phóng Miền Nam 30/4</h1>
+        
+    </div>
+    <div id="buttons">
+        <button id="say-hi-button">Fact hay</button>
+        <button id="say-bye-button">Chúc chúc</button>
+        <button id="say-yeah-button">Tư liệu quý lun</button>
+    </div>
+    <div id = "sign">From Binguine Động Đậy with love</div>
+
+    <!-- include all js for client aka "CEP.x's js engine" -->
+    <script src="client/js/libs/CSInterface.js"></script>
+    <script src="client/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Gelasio";
+    src: url("../fonts/Gelasio-MediumItalic.woff2") format("woff2"),
+         url("../fonts/Gelasio-MediumItalic.woff") format("woff"),
+         url("../fonts/Gelasio-MediumItalic.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Space Grostesk";
+    src: url("../fonts/SpaceGrostesk-Regular.woff2") format("woff2"),
+         url("../fonts/SpaceGrostesk-Regular.woff") format("woff"),
+         url("../fonts/SpaceGrostesk-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #2C2C2C; /* Màu xám giống After Effects */
+    color: white; /* Đảm bảo văn bản dễ đọc trên nền tối */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+}
+#buttons{
+    height:fit-content;
+    flex:content;
+    flex-wrap:wrap;
+    display: flex;
+    gap: 12px; /* Add spacing between buttons */
+}
+#main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(234, 33, 33);
+    text-shadow: 0 0 3px rgb(232, 211, 93), 0 0 6px rgb(232, 211, 93), 0 0 6px rgb(232, 211, 93);
+    font-family: "Gelasio", serif;
+    text-align: center;
+    font-size: 1rem;
+    max-height: 50vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px; /* Add spacing below #main */
+    overflow: hidden; /* Crop overflowing content */
+
+}
+
+#main img {
+    height: 50vh;
+    object-fit: contain; /* Scale image to fit within container */
+}
+
+button {
+    flex:content;
+    display: flex;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    font-family: "Space Grostesk", monospace;
+    padding: 4px;
+    background-color: rgb(234, 33, 33);
+    color: rgb(250, 218, 38);
+    border-radius: 32px;
+    border-color: rgb(45, 165, 240);
+
+}
+
+#sign {
+    font-family: "Space Grostesk", monospace;
+    color: white;
+    background-color: #779410;
+    font-size: 75%;
+    text-shadow: none;
+    margin: 2px;
+    padding: 4px;
+}
